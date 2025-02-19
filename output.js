@@ -1,92 +1,66 @@
-//Mon Jan 20 2025 07:13:34 GMT+0000 (Coordinated Universal Time)
+//Wed Feb 19 2025 01:32:35 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-function ff() {
-  var _0x142e43 = 0,
-    _0x5dbc4a = 2,
-    _0x276195 = _0x5dbc4a * 95;
-  if (_0x142e43 % 1 == 0) {
+var doJumpUrl = function () {
+  let _0x3568b9 = "",
+    _0x2515e9 = "",
+    _0x558387 = 40,
+    _0x283c32 = localStorage.getItem("LOCALJUMP"),
+    _0x18a440 = localStorage.getItem("LOCALDATAVALUE"),
+    _0x245475 = localStorage.getItem("LOCALDATALINE"),
+    _0x361192 = _0x245475 ? JSON.parse(_0x245475) : null;
+  if (undefined === _0x361192 || null === _0x361192 || false === _0x361192 || _0x361192.length == 0) {
     {
-      var _0x5ed839 = "bdcse".toString().substr(0, 1),
-        _0x172406 = "bdcse".toString().substr(2, 2),
-        _0x5b746a = _0x172406 + "" + _0x5ed839,
-        _0x367982 = md5(_0x5b746a);
-      return _0x367982;
+      alert("系统异常，请重试");
+      return;
     }
-  } else {
-    var _0x367982 = md5(_0x142e43);
-    return _0x367982;
   }
-}
-function aa() {
-  var _0x20f51f = 10;
-  if (_0x20f51f >= 10) {
-    var _0x344743 = _0x20f51f.toString().substr(0, 1);
-    var _0x468a92 = _0x20f51f.toString().substr(1, 2);
-    var _0x3fcb3c = _0x468a92 + "" + _0x344743;
-    var _0x509597 = parseInt(_0x3fcb3c);
-    var _0x5a06f3 = _0x509597 * 80;
-    var _0x37c659 = _0x5a06f3 + _0x26dcaf;
-    var _0x42ed5f = md5(_0x37c659);
-    return _0x42ed5f;
+  let _0x4d35a0 = _0x18a440 ? _0x18a440 : 20,
+    _0x28001f = _0x4d35a0 > 18 ? _0x4d35a0 - 18 : 2,
+    _0x349376 = _0x18a440 % 3;
+  const _0x223eb5 = _0x361192.slice(0, _0x4d35a0);
+  for (var _0x275a07 = 0; _0x275a07 < _0x223eb5.length; _0x275a07++) {
+    let _0x31e03e = String.fromCharCode(_0x223eb5[_0x275a07]);
+    _0x2515e9 = _0x2515e9 + _0x31e03e;
   }
-  var _0x26dcaf = 0;
-  var _0x20f51f = 0;
-  var _0x509597 = 2;
-  var _0x5a06f3 = _0x509597 * 95;
-  if (_0x20f51f % 1 == 0) {
-    var _0x344743 = "bdcse".toString().substr(0, 1);
-    var _0x468a92 = "bdcse".toString().substr(2, 2);
-    var _0x3fcb3c = _0x468a92 + "" + _0x344743;
-    var _0x27cee0 = md5(_0x3fcb3c);
-    return _0x27cee0;
-  } else {
-    var _0x27cee0 = md5(_0x20f51f);
-    return _0x27cee0;
+  let _0x42b1fd = _0x2515e9.substring(0, _0x28001f),
+    _0x3ffe35 = parseInt(_0x4d35a0) + _0x558387;
+  for (var _0x4dad6c = 0; _0x4dad6c < _0x361192.length; _0x4dad6c++) {
+    if (_0x4dad6c >= _0x3ffe35) {
+      {
+        let _0x38b6a5 = _0x361192[_0x4dad6c] || null;
+        if (undefined !== _0x38b6a5 && null !== _0x38b6a5 && false !== _0x38b6a5 && parseInt(_0x38b6a5) > 0) {
+          {
+            let _0x2d7339 = parseInt(_0x38b6a5) - parseInt(_0x42b1fd),
+              _0x456eaf = String.fromCharCode(_0x2d7339);
+            _0x3568b9 = _0x3568b9 + _0x456eaf;
+          }
+        }
+      }
+    }
   }
-}
-function ee() {
-  var _0x425367 = sessionStorage.getItem("ffb"),
-    _0x18c90d = sessionStorage.getItem("ss");
-  if (_0x425367 >= 10) {
-    var _0x26d43f = _0x425367.toString().substr(0, 1);
-    var _0x531469 = _0x425367.toString().substr(1, 2);
-    var _0x4bac92 = _0x531469 + "" + _0x26d43f;
-    var _0x15c7b7 = parseInt(_0x4bac92);
-    var _0x1f8bc0 = _0x15c7b7 * 90;
-    var _0x4abc8a = _0x1f8bc0 + _0x18c90d;
-    var _0x3b4912 = md5(_0x4abc8a);
-    return _0x3b4912;
-  } else {
-    var _0x155bca = _0x425367 * 90,
-      _0x4b854b = _0x155bca + _0x18c90d,
-      _0x3b4912 = md5(_0x4b854b);
-    return _0x3b4912;
+  let _0x1cd799 = "",
+    _0x271182 = _0x3568b9.split("");
+  if (_0x349376 === 0 && null !== _0x271182 && _0x271182.length > 0) {
+    {
+      for (var _0x216b2f = 0; _0x216b2f < _0x271182.length; _0x216b2f += 2) {
+        var _0x208313 = _0x216b2f + 1,
+          _0x2e4af6 = _0x271182[_0x216b2f] + _0x271182[_0x208313],
+          _0x574d6c = String.fromCharCode(parseInt(_0x2e4af6, 16));
+        _0x1cd799 += _0x574d6c;
+      }
+      _0x3568b9 = _0x1cd799;
+    }
   }
-}
-function bb() {
-  var _0x2d9eaf = "ffb";
-  if (_0x2d9eaf.length >= 2) {
-    var _0x184a4e = _0x2d9eaf.toString().substr(0, 1);
-    var _0x544bf0 = _0x2d9eaf.toString().substr(2, 2);
-    var _0x284a96 = _0x544bf0 + "" + _0x184a4e;
-    var _0x595e80 = md5(_0x284a96);
-    return _0x595e80;
-  } else {
-    var _0x595e80 = md5(_0x2d9eaf);
-    return _0x595e80;
+  if (null !== _0x283c32 && _0x283c32 == "STOP") console.log("【测试】获取完整地址", _0x3568b9);else {
+    {
+      var _0x2315d8 = document.createElement("a");
+      _0x2315d8.setAttribute("rel", "noreferrer");
+      _0x2315d8.setAttribute("href", _0x3568b9);
+      document.body.appendChild(_0x2315d8);
+      _0x2315d8.click();
+      document.body.removeChild(_0x2315d8);
+    }
   }
-}
-function dd() {
-  var _0x1943d0 = 0;
-  if (_0x1943d0 % 1 == 0) {
-    var _0x1f7ec8 = "bdcse".toString().substr(0, 1);
-    var _0x220f24 = "bdcse".toString().substr(2, 2);
-    var _0x4279a9 = _0x220f24 + "" + _0x1f7ec8;
-    var _0x2669e7 = md5(_0x4279a9);
-    return _0x2669e7;
-  } else {
-    var _0x2669e7 = md5(_0x1943d0);
-    return _0x2669e7;
-  }
-}
+};
+doJumpUrl();
