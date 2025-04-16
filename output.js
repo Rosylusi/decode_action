@@ -1,6 +1,8 @@
-//Mon Apr 07 2025 03:46:50 GMT+0000 (Coordinated Universal Time)
+//Wed Apr 16 2025 01:45:17 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
+const $ = new Env("望潮");
+const notify = $.isNode() ? require("./sendNotify") : "";
 (() => {
   function b(a7) {
     b = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (aa) {
